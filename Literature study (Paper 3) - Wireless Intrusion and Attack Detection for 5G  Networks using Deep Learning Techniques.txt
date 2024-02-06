@@ -68,6 +68,20 @@ Process workflow:
 5. Model Methodology: 
 
 
+Part 1: Autoencoders
+Part 2: DNN
+
+
+An autoencoder is a type of neural network model that seeks to learn a compressed representation of an input. It is an unsupervised learning method that employs unsupervised learning to learn a representation (encoding) for a set of data, typically for the purpose of reducing the dimensionality of the data. Autoencoders are typically trained as part of a broader model that attempts to recreate the input. Autoencoders are a specialized class of algorithms that can learn efficient representations of input data with no need for labels. The output of Autoencoder is fed into the DNN as the input.
+
+
+
+
+  
+
+6. Experimental Setup: Python Keras library with TensorFlow back-end on Google colab. The colab provided 12 GB RAM, 68 GB disk space and ability to use GPU hardware accelerator, and the ability to mount Google drive cloud storage to use it.
+
+
 Future Work: 
 * Building a complete 5G network in one simulation software to build a complete system that starts with capturing the traffic and classifying it and make the system easy to use by admin and other users.
 * Make the system provides alerts when attacks happen on the 5G network and generate a log for this attack and store it in the database as Archived data.
