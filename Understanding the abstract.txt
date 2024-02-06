@@ -1,0 +1,7 @@
+The 5th generation wireless network (5G) is considered a major advancement in global cellular networks, following 1G, 2G, 3G, and 4G. Ongoing work on the development of the sixth generation (6G) is also in progress, promising enhanced connectivity.
+
+5G has the ability to connect a wide range of devices and machines, utilizing wavelengths from 1 to 10 mm and frequencies from 300 MHz to 3 GHz. Many countries have already adopted this technology within their borders.
+
+Due to the rapid deployment of 5G networks without sufficient study and preparation, new vulnerabilities for attackers and hackers are introduced. This leads to an increased risk of Internet Protocol (IP) attacks and intrusion.
+
+The research focuses on addressing the security challenges in the 5G network by proposing an efficient approach using Machine Learning algorithms for detecting intrusions. The goal is to achieve a high accuracy rate in identifying unidentified and suspicious circumstances, such as intruder hackers or attackers.
