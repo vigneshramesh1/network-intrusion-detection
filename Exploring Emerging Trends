@@ -14,3 +14,6 @@ There are three different algorithms in incremental learning:
 1. SVM
 2. Logistic Regression
 3. Perceptron
+
+
+Paper also talked about how the algorithms are tested in two different experiments. 
