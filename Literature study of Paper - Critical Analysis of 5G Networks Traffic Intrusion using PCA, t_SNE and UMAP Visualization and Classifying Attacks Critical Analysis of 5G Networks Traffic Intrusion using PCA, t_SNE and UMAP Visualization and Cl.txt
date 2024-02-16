@@ -39,3 +39,33 @@ Prime data issues found:
 
 3. Class Overlap issue - Model Overfitting:
                 The percentage of records for each malicious class is not uniformly distributed. Classes like UDPFlood and HTTPFlood take the majority of the records, which makes the model overfit and less robust, as it tends to make mistakes in the classification of classes with lesser percentage. Visualization of the data confirmed that various classes form mixed clusters, and didn’t form a uniform and separable clusters.
+
+
+
+
+Solutions:
+
+
+Feature Selection:
+
+
+As part of the feature selection step, the authors have implemented mutual information technique to select only the primary features and drop those which have any sort of correlation (linear or exponential) with other features.
+
+
+The authors selected twenty-two top-ranked features from a total of 52 features.
+
+
+  
+ 
+        
+Dimensionality Reduction:
+
+
+In the Dimensionality Reduction step, Principal Component Analysis is performed        on the top 22 features selected by Mutual Information to generate just 11 principal components.
+
+
+  
+
+
+
+Eleven principal components are fed to classifiers for classification.
