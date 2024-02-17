@@ -1,0 +1,8 @@
+The best results we got is from KNN classifier. It provides 97.2 accuracy with FP-Rate of 2.2%. 
+Dimensionality Reducution in this dataset as we have many un-important features. 
+We also have class imbalance in this class. UDP has 61% records whereas ICMPFlood has 0.156% records. 
+Feature Extraction and Feature Selection are part of Dimenstionality Reduction. 
+PCA is recommended, we can also use Autoencoder. 
+For class imbalance, we can use Synthetic Minority Oversampling technique. 
+We chose multilayer perceptron which is deep learning model.
+Support Vector Classifier is also a very alternative approach.
