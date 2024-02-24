@@ -1,0 +1,22 @@
+﻿Research Papers and Links on LSTMs:
+
+
+Intrusion detection systems using long short-term memory (LSTM) | Journal of Big Data | Full Text (springeropen.com)
+
+
+A hybrid CNN+LSTM-based intrusion detection system for industrial IoT networks - ScienceDirect
+
+
+Efficient Deep CNN-BiLSTM Model for Network Intrusion Detection | Proceedings of the 2020 3rd International Conference on Artificial Intelligence and Pattern Recognition (acm.org)   
+
+aipr_20_ids_paper_pre_print.pdf (jaysinha.me)
+
+
+razor08/Efficient-CNN-BiLSTM-for-Network-IDS (github.com)
+
+
+A bidirectional LSTM deep learning approach for intrusion detection - ScienceDirect
+
+Conclusion: 
+* Autoencoders proved to be a great technique for dimensionality reduction with non-linear encoder and decoder functions. Using autoencoders with a dense neural network will be a good model for multi-class classification.
+* Initially, we thought of using Long Short-Term Memory Networks (LSTMs), but after elaborate research on the given 5G NIDD dataset, the functioning of LSTM models, and several other research papers, we decided not to consider LSTMs as there wasn't any unique timestamp field for the records in our dataset. Some previous research papers have implemented LSTMs, assuming the rows of the dataset are sequences, but that idea doesn't make sense to us conceptually, as different columns represent different aspects of data that don't form a logical sequence.

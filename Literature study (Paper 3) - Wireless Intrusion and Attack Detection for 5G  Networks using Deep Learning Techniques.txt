@@ -1,0 +1,96 @@
+﻿Wireless Intrusion and Attack Detection for 5G  Networks using Deep Learning Techniques
+
+
+Research Paper Link: (PDF) Wireless Intrusion and Attack Detection for 5G Networks using Deep Learning Techniques (researchgate.net)
+
+
+Abstract: A Wireless Intrusion Detection System is an important part of any system or company connected to the internet and has a wireless connection inside it because of the increasing number of internal or external attacks on the network. These WIDS systems are used to predict and detect wireless network attacks such as flooding, DoS attack, and evil- twin that badly affect system availability. Artificial intelligence (Machine Learning, Deep Learning) are popular techniques used as a good solution to build effective network intrusion detection. That's because of the ability of these algorithms to learn complicated behaviors and then use the learned system for discovering and detecting network attacks. In this work, we have performed an autoencoder with a DNN deep algorithm for protecting the companies by detecting intrusion and attacks in 5G wireless networks. We used the Aegean Wi-Fi Intrusion dataset (AWID). Our WIDS resulted in a very good performance with an accuracy of 99% for the dataset attack types: Flooding, Impersonation, and Injection.
+
+
+Core Work: Using an Autoencoder with a Deep Neural Network (DNN) model architecture to detect intrusion and attacks in 5G wireless networks.
+
+
+Model Accuracy: 99.89%
+
+
+Other traditional machine learning techniques used before: 
+1. Random Forest, K-means, and Adaboost 
+2. Naïve bayes and Random Forest (RF) 
+3. Decision Tree (DT) and k-Nearest Neighbor (KNN)
+
+
+Other deep learning techniques used before: 
+4. Artificial Neural Networks (ANN), and Long Short-Term Memory (LSTM) networks, and Convolutional Neural Networks (CNN) 
+5. Auto-encoder with DNN
+6. Convolutional Neural Networks (CNN) 
+
+
+Dataset: Aegean Wi-Fi Intrusion dataset (AWID) [AWID-2 dataset]- AWID - Aegean Wi-Fi Intrusion Dataset
+* Attributes: 155 + 1(class)
+* Output Labels: 
+   * CLS type: 4(Impersonation, Flooding, Injection, and Normal)
+   * ATK type: 16 (subcategories of main 4 in CLS) (DE-authentication, disassociation, authentication request, amok, probe request, probe response, beacon, CTS, RTS, power saving, power, evil-twin, caffe-)
+* Features after dimension reduction: 34 + 1(class) 
+
+
+
+
+
+
+
+
+Dataset attack types: Flooding, Impersonation, and Injection.
+
+
+General types of attack: Flooding or packet sniffing, fake authentication, injection, Impersonation, session hijacking, denial of service (DoS), and address spoofing, traffic analysis, and unauthorized access.
+
+
+Process workflow: 
+
+
+  
+
+1. Pre-processing and Data Normalization:
+   1. Delete missing value.
+   2. Format data into standard data type.
+   3. To reduce the size of the datasets, reduce the unnecessary accuracy of the float numbers by dropping digits after the decimal point. 
+   4. Drop samples with "Infinity" and "NaN" values.
+   5. Parse and remove columns that were repeated in the dataset.
+   6. Reduce the unbalance in the dataset.
+2. Normalization: feature scaling (Center features around 0 and transform to variance of 1)
+3. Feature Selection: Features after dimension reduction: 34 + 1(class)
+   1. All features with zero amount of variation are removed
+   2. Remove all single value features
+   3. Remove the duplicated features using NetMate and WEKA(?)
+   4. Dropped unrelated features [Domain knowledge]
+   5. Features having a high correlation amongst each other are removed.
+4. Data Splitting: 80/20 (training/validation)
+5. Model Methodology: 
+
+
+Part 1: Autoencoders
+Part 2: DNN
+
+
+An autoencoder is a type of neural network model that seeks to learn a compressed representation of an input. It is an unsupervised learning method that employs unsupervised learning to learn a representation (encoding) for a set of data, typically for the purpose of reducing the dimensionality of the data. Autoencoders are typically trained as part of a broader model that attempts to recreate the input. Autoencoders are a specialized class of algorithms that can learn efficient representations of input data with no need for labels. The output of Autoencoder is fed into the DNN as the input.
+
+
+
+
+  
+
+6. Experimental Setup: Python Keras library with TensorFlow back-end on Google colab. The colab provided 12 GB RAM, 68 GB disk space and ability to use GPU hardware accelerator, and the ability to mount Google drive cloud storage to use it.
+
+
+Future Work: 
+* Building a complete 5G network in one simulation software to build a complete system that starts with capturing the traffic and classifying it and make the system easy to use by admin and other users.
+* Make the system provides alerts when attacks happen on the 5G network and generate a log for this attack and store it in the database as Archived data.
+
+
+Keywords and Abbreviations:
+
+
+1. 5G - The 5th generation mobile network
+2. DDoS - Distributed Denial of Service
+3. WIDS - Wireless Intrusion Detection System
+4. DNN - Deep Neural Network

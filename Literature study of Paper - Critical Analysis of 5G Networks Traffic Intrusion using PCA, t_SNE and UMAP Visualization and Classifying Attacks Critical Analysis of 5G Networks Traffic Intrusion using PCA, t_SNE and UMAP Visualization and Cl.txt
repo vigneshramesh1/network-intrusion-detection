@@ -1,0 +1,71 @@
+﻿Critical Analysis of 5G Networks Traffic Intrusion using PCA, tSNE and UMAP Visualization and Classifying Attacks  
+
+
+Abstract: Networks, threat models, and malicious actors are advancing quickly. With the increased deployment of the 5G networks, the security issues of the attached 5G physical devices have also increased. Therefore, artificial intelligence based autonomous end-to-end security design is needed that can deal with incoming threats by detecting network traffic anomalies. To address this requirement, in this research, we used a recently published 5G traffic dataset, 5G-NIDD, to detect network traffic anomalies using machine and deep learning approaches. First, we analyzed the dataset using three visualization techniques: t-Distributed Stochastic Neighbor Embedding (t-SNE), Uniform Manifold Approximation and Projection (UMAP), and Principal Component Analysis (PCA). Second, we reduced the data dimensionality using mutual information and PCA techniques. Third, we solve the class imbalance issue by inserting synthetic records of minority classes. Last, we performed classification using six different classifiers and presented the evaluation metrics. We received the best results when K-Nearest Neighbors classifier was used: accuracy (97.2%), detection rate (96.7%), and false positive rate (2.2%). 
+
+
+Keywords: Network intrusion detection, class imbalance, t-SNE, UMAP, PCA, 5G-NIDD
+
+
+Dataset: 5G-NIDD
+
+
+Paper Link: 2312.04864.pdf (arxiv.org)
+
+
+Critical Analysis of 5G Networks’ Traffic Intrusion Using PCA, t-SNE, and UMAP Visualization and Classifying Attacks | SpringerLink
+
+
+Core Work: 
+It presents 3 methods of data visualization, namely t-Distributed Stochastic Neighbor Embedding (t-SNE), Uniform Manifold Approximation and Projection (UMAP), and Principal Component Analysis (PCA), to analyze the data better, and find the flaws in the original dataset, which need to be addressed
+
+
+It proposed solutions in the phases of Feature selection and Dimensionality reduction to address the issues in the dataset found through data visualization.
+
+
+Prime data issues found: 
+
+
+1. Dataset class imbalance:
+  
+
+
+
+2. Curse of Dimensionality:
+                Since the size of the dataset is huge(1215890 records), and the number of features is high (51 columns), it’s computationally very difficult to train using the entire dataset. It would also take very long to train such a model using such a huge dataset.
+
+
+
+
+3. Class Overlap issue - Model Overfitting:
+                The percentage of records for each malicious class is not uniformly distributed. Classes like UDPFlood and HTTPFlood take the majority of the records, which makes the model overfit and less robust, as it tends to make mistakes in the classification of classes with lesser percentage. Visualization of the data confirmed that various classes form mixed clusters, and didn’t form a uniform and separable clusters.
+
+
+
+
+Solutions:
+
+
+Feature Selection:
+
+
+As part of the feature selection step, the authors have implemented mutual information technique to select only the primary features and drop those which have any sort of correlation (linear or exponential) with other features.
+
+
+The authors selected twenty-two top-ranked features from a total of 52 features.
+
+
+  
+ 
+        
+Dimensionality Reduction:
+
+
+In the Dimensionality Reduction step, Principal Component Analysis is performed        on the top 22 features selected by Mutual Information to generate just 11 principal components.
+
+
+  
+
+
+
+Eleven principal components are fed to classifiers for classification.
