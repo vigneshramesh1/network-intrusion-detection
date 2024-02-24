@@ -1,0 +1,19 @@
+This paper explains why 5g NIDD is the best dataset out there and why we need to use this datasets. 
+The paper explains how attacks are increasing as the technology is advancing. 
+
+
+Challenges of AI-based malicious traffic detection models in the 5G environment
+
+a) High-performance processing of the detection models:
+b) Traffic data security and privacy
+c) High robustness of detection capabilities.:
+
+
+Incremental testing is better suited for our dataset. Traditional approaches won't work for the dataset as attacks just keep increasing constantly. 
+There are three different algorithms in incremental learning:
+1. SVM
+2. Logistic Regression
+3. Perceptron
+
+
+Paper also talked about how the algorithms are tested in two different experiments. 
