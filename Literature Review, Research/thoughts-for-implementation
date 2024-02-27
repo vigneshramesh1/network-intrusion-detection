@@ -1,0 +1,3 @@
+1. Consider using classification model and then a booster model. 
+2. Consider using incremental learning approach. 
+3. First do binary classification and then do multiple attack classification

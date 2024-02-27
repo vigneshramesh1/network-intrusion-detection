@@ -1,0 +1,18 @@
+This review is for the 5G NIDD paper. This paper talks about how the dataset differs from the other dateset in having a real time network data and how this dataset collected data. 
+
+
+Types of attacks mentioned in the paper:
+1. Port Scans
+2. DDoS Attack
+
+There are 5 different attacks in DDOs Attack:
+ICMP, UDP, SYN, HTTP, Slowrate DOS. 
+
+There are 3 different attacks in Port Scans:
+SYN, TCP, UDP Scan. 
+
+Paper also mentioned about the testbed architecture and also how the attacks are collected using real time data. 
+
+For Feature Selection, they used Pearson Correlation and ANOVA F Scores. 
+
+The benign traffic comprises HTTP, HTTPS, SSH, and SFTP traffic.

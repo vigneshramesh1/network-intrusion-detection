@@ -1,0 +1,13 @@
+
+https://machinelearningmastery.com/why-one-hot-encode-data-in-machine-learning/
+
+In the above paper, learnt why one hot encoding is important. 
+As we are planning to do data preprocessing with one hot encoding, read this paper. 
+This paper talks about ordinal variable(first, second, third) and nominal variable(cats, dogs, tigers)
+They mentioned there will be a natural relationship between ordinal variables and there is no 
+Natural relationship between nominal variables. 
+
+We need to use the variables and try to encode and decode it. 
+
+1. Integer encoding: This encoding is very common for ordinal variables but doesn’t work well for nominal. 
+2. One Hot encoding:  This encoding is like converting the variables to a matrix form. 
