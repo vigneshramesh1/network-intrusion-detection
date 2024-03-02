@@ -1,0 +1,22 @@
+How to clean data:
+	
+	1.Identifying and Removing Duplicate or Irrelevant Data
+	2.Fixing Syntax Errors
+	3.Filtering out Unwanted Outliers
+	4.Handling Missing Data
+	5.Validating Data Accuracy
+
+1.Identifying and Removing Duplicate or Irrelevant Data:
+	Duplicate data can come from a number of sources, including redundant fields in the data gathering process or the same person answering the same question more than once in a survey. Information that you can safely omit since it is unlikely to improve the predictive power of the model is referred to as irrelevant data. This is an especially crucial step when working with big datasets.
+
+2.Fixing Syntax Errors:
+	Inconsistencies in data entry, such as incorrect date formats, misspelled words, or grammatical problems, can result in syntax errors. For the consistency of the data to be guaranteed, you must locate and fix these mistakes. To keep the data's quality intact, this step is essential.
+
+3.Filtering out Unwanted Outliers:
+	Data points known as outliers, or those that substantially differ from the rest of the data, might skew the model's learning process. It is necessary to recognize these outliers and take the proper action, such as elimination or statistical analysis. This is a step in the data reduction process.
+
+4.Handling Missing Data:
+	In data collecting, missing data is a prevalent problem. You can use a variety of techniques, such as removing the data points or imputing missing values, depending on the type and amount of missing data. This is a crucial step, particularly when working with large datasets.
+
+5.Validating Data Accuracy:
+	Verify the data's accuracy using cross-checks and other techniques for validation. Maintaining the accuracy of the data is essential to the machine-learning model's dependability. For data scientists, this phase is very crucial because it has an immediate effect on the model's performance.
