@@ -1,0 +1,26 @@
+Steps for preprocessing
+
+Sunday, February 25, 2024
+2:56 PM
+
+	1. Identify categorical in Encoded.csv and rename them better. (if we know what the col means we can choose to drop/include)
+	
+o/p - full fledged encoded dataset
+	
+	2. Drop duplicated
+----------------------------
+	3. SPLIT DATASET
+------------------------------------
+
+	4. Check whether some columns are present for some attacks, create plots. 
+
+o/p - value for imputation, make decision  
+Do imputation check, do outlier check
+
+	5. Normalize the value with mean = 0, standard scalar
+
+	6. Mutual Information 
+
+	7. PCA
+
+Class imbalance issue - Stratified k fold 
