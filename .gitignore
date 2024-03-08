@@ -324,3 +324,6 @@ poetry.toml
 
 # LSP config files
 pyrightconfig.json
+
+metadata.json
+metadata.xml
