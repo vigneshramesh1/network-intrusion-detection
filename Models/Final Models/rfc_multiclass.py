@@ -14,6 +14,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
 from sklearn.decomposition import PCA
 from sklearn.feature_selection import mutual_info_classif
+from time import time
 
 # Read the data
 df = pd.read_csv('/scratch/sravic23/NIDS/datasets/csv_preprocessed.csv', low_memory=False)
@@ -65,6 +66,8 @@ precision_scores = []
 recall_scores = []
 f1_scores = []
 
+start_time = time()
+
 # Perform k-fold cross-validation
 for train_index, test_index in skf.split(X_train_pca, y_train):
     X_train_fold, X_val_fold = X_train_pca[train_index], X_train_pca[test_index]
@@ -88,14 +91,28 @@ for train_index, test_index in skf.split(X_train_pca, y_train):
     recall_scores.append(recall_fold)
     f1_scores.append(f1_fold)
 
+end_time = time()
+
+print(f' Train start: {start_time}')
+print(f' Train end: {end_time}')
+print(f' Training time: {end_time - start_time} seconds\n')
+
 # Average the evaluation metrics across folds
 average_accuracy = np.mean(accuracy_scores)
 average_precision = np.mean(precision_scores)
 average_recall = np.mean(recall_scores)
 average_f1 = np.mean(f1_scores)
 
+start_time = time()
+
 # Predict on the X_test dataset
 y_test_pred = rfc.predict(X_test_pca)
+
+end_time = time()
+
+print(f' Test start: {start_time}')
+print(f' Test end: {end_time}')
+print(f' Testing time: {end_time - start_time} seconds\n')
 
 # Evaluate the model on the X_test dataset
 accuracy_test = accuracy_score(y_test, y_test_pred)
