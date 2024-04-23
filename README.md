@@ -21,11 +21,11 @@ To get started with replicating our research findings, follow these steps:
 
 1. Clone this repository to your local machine.
 2. Download the 5G Network Intrusion Detection Dataset (5G-NIDD) from the provided source and place it in the `Dataset` directory.
-3. Navigate to the `Models` directory and follow the instructions in the README file to run the machine learning models.
+3. Navigate to the `Models` directory and follow the steps in the .ipynb files to run the machine learning models.
 4. Refer to the `Results` directory for the outcomes of our experiments and performance evaluation.
 
 ## Contributing
 Contributions to this research project are welcome. If you have suggestions for improvements or would like to collaborate, please feel free to open an issue or submit a pull request.
 
 ## Contact
-For any inquiries or questions regarding this research, please contact [Abdallah Moubayed(abdallah.moubayed@asu.edu) or Vignesh Ramesh(vrames25@asu.edu)].
+For any inquiries or questions regarding this research, please contact Abdallah Moubayed(abdallah.moubayed@asu.edu) or Vignesh Ramesh(vrames25@asu.edu).
